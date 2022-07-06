@@ -1,0 +1,21 @@
+@import '../base/variables';
+
+.footer{
+    padding: 0;
+    margin: 0;
+
+    .p-footer {
+        height: 7rem;
+        display: flex;
+        align-items: flex-end;
+
+        p {
+            margin: 0 auto;
+            text-align: center;
+            color: $bg-secundario;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+/*   Fin Index    */
