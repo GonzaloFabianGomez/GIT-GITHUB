@@ -139,36 +139,36 @@ h4 {
   max-width: 50rem;
   border: solid #00ffff 0.7rem;
 }
-.principal .seccion {
+.principal .main .seccion {
   text-align: center;
   margin: 1rem 0 2rem;
 }
-.principal .seccion h1 {
+.principal .main .seccion h1 {
   width: 100%;
   margin: 1rem auto;
   display: block;
   color: #ffffff;
 }
-.principal .seccion h1 span {
+.principal .main .seccion h1 span {
   color: #00ffff;
 }
-.principal .seccion h2 {
+.principal .main .seccion h2 {
   width: 100%;
   margin: 1rem auto;
   color: #ffffff;
   align-self: center;
 }
-.principal .seccion h2 span {
+.principal .main .seccion h2 span {
   color: #00ffff;
 }
-.principal .seccion .intro {
+.principal .main .seccion .intro {
   width: 100%;
   margin: 1rem auto;
   padding: 1rem 0;
   color: #ffffff;
   font-size: 1.6rem;
 }
-.principal .seccion a {
+.principal .main .seccion a {
   text-decoration: none;
   color: #00ffff;
   font-size: 1.2rem;
@@ -181,7 +181,7 @@ h4 {
   transition: 0.7s;
   max-width: 12rem;
 }
-.principal .seccion a:hover {
+.principal .main .seccion a:hover {
   background-color: #00ffff;
   color: #000000;
   box-shadow: 0 0 5rem #00ffff;
@@ -282,22 +282,6 @@ h4 {
 }
 
 /*   Fin   About   */
-.footer {
-  padding: 0;
-  margin: 0;
-}
-.footer .p-footer {
-  height: 7rem;
-  display: flex;
-  align-items: flex-end;
-}
-.footer .p-footer p {
-  margin: 0 auto;
-  text-align: center;
-  color: #ffffff;
-  font-size: 1.2rem;
-}
-
 /*    Service    */
 @media (min-width: 768px) {
   .service {
@@ -308,24 +292,20 @@ h4 {
   text-align: center;
   margin: 1rem 0 2rem;
 }
-
 .service h2 {
   width: 100%;
   margin: 1rem auto;
   color: #ffffff;
   align-self: center;
 }
-
 .service h2 span {
   color: #00ffff;
 }
-
-.servicio {
+.service .servicio {
   height: 16rem;
   margin: 1rem 0;
 }
-
-.servicio section {
+.service .servicio section {
   height: 100%;
   background-color: rgba(0, 255, 255, 0.055);
   margin: 1rem auto;
@@ -333,16 +313,13 @@ h4 {
   border-radius: 1rem;
   max-width: 40rem;
 }
-
-.servicio section:hover {
+.service .servicio section:hover {
   cursor: pointer;
 }
-
-.servicio h3 {
+.service .servicio section h3 {
   color: #ffffff;
 }
-
-.servicio p {
+.service .servicio section p {
   font-size: 1.6rem;
   color: #ffffff;
 }
@@ -359,19 +336,16 @@ h4 {
   width: 100%;
   margin: 1rem 0 2rem;
 }
-
 .portfolio h2 {
   width: 100%;
   margin: 1rem auto;
   color: #ffffff;
   align-self: center;
 }
-
-.proyectos {
+.portfolio .proyectos {
   margin: 1rem 0;
 }
-
-.proyectos section {
+.portfolio .proyectos section {
   padding: 1rem;
   background-color: rgba(0, 255, 255, 0.055);
   border: solid #00ffff 0.7rem;
@@ -379,8 +353,7 @@ h4 {
   max-width: 50rem;
   margin: 0 auto;
 }
-
-.proyectos img {
+.portfolio .proyectos section img {
   width: 100%;
   max-width: 40rem;
 }
@@ -388,9 +361,6 @@ h4 {
 /*   Fin Portfolio   */
 /*    Contact     */
 @media (min-width: 480px) {
-  .contenedor-formulario {
-    grid-column: 1/3;
-  }
   .formulario {
     height: 100%;
   }
@@ -417,52 +387,36 @@ h4 {
   width: 100%;
   margin: 1rem 0 2rem;
 }
-
 .contenedor h2 {
   width: 100%;
   margin: 1rem auto;
   color: #ffffff;
   align-self: center;
 }
-
-.datos {
+.contenedor .datos {
   margin: 1rem 0;
   color: #ffffff;
   font-size: 1.6rem;
 }
-
-.datos-contacto {
+.contenedor .datos .datos-contacto {
   background-color: rgba(0, 255, 255, 0.055);
   border: solid #00ffff 0.7rem;
   border-radius: 0.5rem;
   max-width: 40rem;
   margin: 0 auto;
 }
-
-.formulario {
+.contenedor .formulario {
   margin: 2rem auto 0;
   border-radius: 0.5rem;
   max-width: 95rem;
 }
-
-.formulario fieldset {
+.contenedor .formulario fieldset {
   padding: 0 1rem;
   margin: 0;
   border: none;
   height: 100%;
 }
-
-.textarea textarea {
-  width: 100%;
-  height: 10rem;
-  margin: 1rem 0;
-  background-color: #000000;
-  color: #ffffff;
-  border: solid #00ffff 0.7rem;
-  border-radius: 0.5rem;
-}
-
-.item {
+.contenedor .formulario fieldset .campo .item {
   height: 5rem;
   background-color: #000000;
   width: 100%;
@@ -471,9 +425,9 @@ h4 {
   border: solid #00ffff 0.7rem;
   border-radius: 0.5rem;
   color: #ffffff;
+  font-size: 1.4rem;
 }
-
-.enviar {
+.contenedor .formulario fieldset .campo .enviar {
   margin-bottom: 1rem;
   color: #00ffff;
   font-size: 1.2rem;
@@ -483,14 +437,38 @@ h4 {
   border-radius: 0.5rem;
   transition: 0.7s;
 }
-
-.enviar:hover {
+.contenedor .formulario fieldset .campo .enviar:hover {
   cursor: pointer;
   background-color: #00ffff;
   color: #000000;
   box-shadow: 0 0 5rem #00ffff;
 }
+.contenedor .formulario fieldset .textarea textarea {
+  width: 100%;
+  height: 10rem;
+  margin: 1rem 0;
+  background-color: #000000;
+  color: #ffffff;
+  border: solid #00ffff 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+}
 
 /*   Fin Contact   */
+.footer {
+  padding: 0;
+  margin: 0;
+}
+.footer .p-footer {
+  height: 7rem;
+  display: flex;
+  align-items: flex-end;
+}
+.footer .p-footer p {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
 
 /*# sourceMappingURL=style.css.map */

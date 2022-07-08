@@ -1,0 +1,54 @@
+@import '../base/variables';
+
+/*    Service    */
+
+@media (min-width: 768px) {
+    .service {
+        height: 78rem;
+    }
+}
+
+.service {
+    text-align: center;
+    margin: 1rem 0 2rem;
+
+    h2 {
+        width: 100%;
+        margin: 1rem auto;
+        color: $bg-secundario;
+        align-self: center;
+
+        span {
+            color: $bg-primario;
+        }
+    }
+
+    .servicio {
+        height: 16rem;
+        margin: 1rem 0;
+
+        section {
+            height: 100%;
+            background-color: rgba(0, 255, 255, 0.055);
+            margin: 1rem auto;
+            border: solid $bg-primario 0.7rem;
+            border-radius: 1rem;
+            max-width: 40rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            h3 {
+                color: $bg-secundario;
+            }
+
+            p{
+                font-size: 1.6rem;
+                color: $bg-secundario;
+            }
+        }
+    }
+}
+
+/*   Fin Service   */

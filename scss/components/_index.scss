@@ -1,0 +1,74 @@
+@import '../base/variables';
+
+.principal {
+
+    .main {
+        height: 80rem;
+        align-content: center;
+        
+        .foto {
+
+            img {
+            max-width: 50rem;
+            border: solid $bg-primario 0.7rem;
+            }
+        }
+        
+        .seccion {
+            text-align: center;
+            margin: 1rem 0 2rem;
+    
+            h1 {
+                width: 100%;
+                margin: 1rem auto;
+                display: block;
+                color: $bg-secundario;
+    
+                span {
+                    color: $bg-primario;
+                }
+            }
+    
+            h2 {
+                width: 100%;
+                margin: 1rem auto;
+                color: $bg-secundario;
+                align-self: center;
+    
+                span {
+                    color: $bg-primario;
+                }
+            }
+    
+            .intro {
+                width: 100%;
+                margin: 1rem auto;
+                padding: 01rem 0;
+                color: $bg-secundario;
+                font-size: 1.6rem;
+            }
+    
+            a {
+                text-decoration: none;
+                color: $bg-primario;
+                font-size: 1.2rem;
+                margin: 1rem auto;
+                padding: 1rem 2rem;
+                background-color: $bg-terciario;
+                background: transparent;
+                border: solid $bg-primario 0.2rem;
+                border-radius: 0.5rem;
+                transition: 0.7s;
+                max-width: 12rem;
+    
+                &:hover {
+                    background-color: $bg-primario;
+                    color: $bg-terciario;
+                    box-shadow: 0 0 5rem $bg-primario;
+                }
+            }
+        }
+    }
+}
+
+/*   Fin Index    */
