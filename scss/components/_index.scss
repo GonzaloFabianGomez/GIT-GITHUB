@@ -1,4 +1,5 @@
 @import '../base/variables';
+// @import '../base/extends';
 
 .principal {
 
@@ -43,28 +44,17 @@
             .intro {
                 width: 100%;
                 margin: 1rem auto;
-                padding: 01rem 0;
+                padding: 1rem 0;
                 color: $bg-secundario;
                 font-size: 1.6rem;
             }
     
             a {
                 text-decoration: none;
-                color: $bg-primario;
-                font-size: 1.2rem;
-                margin: 1rem auto;
-                padding: 1rem 2rem;
-                background-color: $bg-terciario;
-                background: transparent;
-                border: solid $bg-primario 0.2rem;
-                border-radius: 0.5rem;
-                transition: 0.7s;
-                max-width: 12rem;
+                @extend %btn;
     
                 &:hover {
-                    background-color: $bg-primario;
-                    color: $bg-terciario;
-                    box-shadow: 0 0 5rem $bg-primario;
+                    @extend %btn-hover;
                 }
             }
         }

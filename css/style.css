@@ -170,23 +170,7 @@ h4 {
 }
 .principal .main .seccion a {
   text-decoration: none;
-  color: #00ffff;
-  font-size: 1.2rem;
-  margin: 1rem auto;
-  padding: 1rem 2rem;
-  background-color: #000000;
-  background: transparent;
-  border: solid #00ffff 0.2rem;
-  border-radius: 0.5rem;
-  transition: 0.7s;
-  max-width: 12rem;
 }
-.principal .main .seccion a:hover {
-  background-color: #00ffff;
-  color: #000000;
-  box-shadow: 0 0 5rem #00ffff;
-}
-
 /*   Fin Index    */
 /*    About    */
 @media (min-width: 480px) {
@@ -264,23 +248,7 @@ h4 {
 }
 .about a {
   text-decoration: none;
-  color: #00ffff;
-  font-size: 1.2rem;
-  margin: 1rem auto;
-  padding: 1rem 2rem;
-  background-color: #000000;
-  background: transparent;
-  border: solid #00ffff 0.2rem;
-  border-radius: 0.5rem;
-  transition: 0.7s;
-  max-width: 12rem;
 }
-.about a:hover {
-  background-color: #00ffff;
-  color: #000000;
-  box-shadow: 0 0 5rem #00ffff;
-}
-
 /*   Fin   About   */
 /*    Service    */
 @media (min-width: 768px) {
@@ -427,21 +395,8 @@ h4 {
   color: #ffffff;
   font-size: 1.4rem;
 }
-.contenedor .formulario fieldset .campo .enviar {
-  margin-bottom: 1rem;
-  color: #00ffff;
-  font-size: 1.2rem;
-  padding: 1rem;
-  background-color: #000000;
-  border: solid #00ffff 0.2rem;
-  border-radius: 0.5rem;
-  transition: 0.7s;
-}
 .contenedor .formulario fieldset .campo .enviar:hover {
   cursor: pointer;
-  background-color: #00ffff;
-  color: #000000;
-  box-shadow: 0 0 5rem #00ffff;
 }
 .contenedor .formulario fieldset .textarea textarea {
   width: 100%;
@@ -469,6 +424,24 @@ h4 {
   text-align: center;
   color: #ffffff;
   font-size: 1.2rem;
+}
+
+.principal .main .seccion a, .about a, .contenedor .formulario fieldset .campo .enviar {
+  color: #00ffff;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  border: solid #00ffff 0.2rem;
+  border-radius: 0.5rem;
+  transition: 0.7s;
+  max-width: 12rem;
+}
+
+.principal .main .seccion a:hover, .about a:hover, .contenedor .formulario fieldset .campo .enviar:hover {
+  background-color: #00ffff;
+  color: #000000;
+  box-shadow: 0 0 5rem #00ffff;
 }
 
 /*# sourceMappingURL=style.css.map */
