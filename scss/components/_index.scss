@@ -1,5 +1,6 @@
 @import '../base/variables';
-// @import '../base/extends';
+@import '../base/maps';
+@import '../base/mixins';
 
 .principal {
 
@@ -16,13 +17,12 @@
         }
         
         .seccion {
-            text-align: center;
-            margin: 1rem 0 2rem;
+            text-align: map-get($port, t-a);
+            margin: map-get($port, m);
     
             h1 {
-                width: 100%;
+                width: map-get($port, w);
                 margin: 1rem auto;
-                display: block;
                 color: $bg-secundario;
     
                 span {
@@ -31,10 +31,7 @@
             }
     
             h2 {
-                width: 100%;
-                margin: 1rem auto;
-                color: $bg-secundario;
-                align-self: center;
+                @include h2(100%, 1rem auto, $bg-secundario, center);
     
                 span {
                     color: $bg-primario;
@@ -42,7 +39,7 @@
             }
     
             .intro {
-                width: 100%;
+                width: map-get($port, w);
                 margin: 1rem auto;
                 padding: 1rem 0;
                 color: $bg-secundario;

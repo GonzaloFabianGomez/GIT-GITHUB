@@ -1,11 +1,12 @@
 @import '../base/variables';
-// @import '../base/extends';
+@import '../base/maps';
+@import '../base/mixins';
 
 /*    Contact     */
 
 @media (min-width: 480px) {
     .formulario {
-        height: 100%;
+        height: map-get($port, h);
     }
 }
 @media (min-width: 768px) {
@@ -28,15 +29,15 @@
 
 
 .contenedor {
-    text-align: center;
-    width: 100%;
-    margin: 1rem 0 2rem;
+    text-align: map-get($port, t-a);
+    margin: map-get($port, m);
 
     h2 {
-        width: 100%;
-        margin: 1rem auto;
-        color: $bg-secundario;
-        align-self: center;
+        @include h2(100%, 1rem auto, $bg-secundario, center);
+
+        span {
+            color: $bg-primario;
+        }
     }
 
     .datos {
@@ -62,14 +63,14 @@
             padding: 0 1rem;
             margin: 0;
             border: none;
-            height: 100%;
+            height: map-get($port, h);
 
             .campo {
 
                 .item {
                     height: 5rem;
                     background-color: $bg-terciario;
-                    width: 100%;
+                    width: map-get($port, w);
                     margin: 1rem 0;
                     border: none;
                     border: solid $bg-primario 0.7rem;
@@ -91,7 +92,7 @@
             .textarea {
 
                 textarea {
-                width: 100%;
+                width: map-get($port, w);
                 height: 10rem;
                 margin: 1rem 0;
                 background-color: $bg-terciario;

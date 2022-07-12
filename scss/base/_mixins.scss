@@ -1,0 +1,7 @@
+
+@mixin h2($ancho, $margin, $color, $center){
+    width: $ancho;
+    margin: $margin;
+    color: $color;
+    align-self: $center;
+}

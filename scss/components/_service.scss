@@ -1,5 +1,6 @@
 @import '../base/variables';
-// @import '../base/extends';
+@import '../base/maps';
+@import '../base/mixins';
 
 /*    Service    */
 
@@ -10,14 +11,11 @@
 }
 
 .service {
-    text-align: center;
-    margin: 1rem 0 2rem;
+    text-align: map-get($port, t-a);
+    margin: map-get($port, m);
 
     h2 {
-        width: 100%;
-        margin: 1rem auto;
-        color: $bg-secundario;
-        align-self: center;
+        @include h2(100%, 1rem auto, $bg-secundario, center);
 
         span {
             color: $bg-primario;
@@ -29,7 +27,7 @@
         margin: 1rem 0;
 
         section {
-            height: 100%;
+            height: map-get($port, h);
             background-color: rgba(0, 255, 255, 0.055);
             margin: 1rem auto;
             border: solid $bg-primario 0.7rem;

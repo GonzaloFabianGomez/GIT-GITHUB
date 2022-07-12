@@ -146,7 +146,6 @@ h4 {
 .principal .main .seccion h1 {
   width: 100%;
   margin: 1rem auto;
-  display: block;
   color: #ffffff;
 }
 .principal .main .seccion h1 span {
@@ -199,7 +198,6 @@ h4 {
 .about {
   text-align: center;
   margin: 1rem 0 2rem;
-  padding: 0;
 }
 .about h2 {
   width: 100%;
@@ -301,7 +299,6 @@ h4 {
 }
 .portfolio {
   text-align: center;
-  width: 100%;
   margin: 1rem 0 2rem;
 }
 .portfolio h2 {
@@ -352,7 +349,6 @@ h4 {
 }
 .contenedor {
   text-align: center;
-  width: 100%;
   margin: 1rem 0 2rem;
 }
 .contenedor h2 {
@@ -360,6 +356,9 @@ h4 {
   margin: 1rem auto;
   color: #ffffff;
   align-self: center;
+}
+.contenedor h2 span {
+  color: #00ffff;
 }
 .contenedor .datos {
   margin: 1rem 0;

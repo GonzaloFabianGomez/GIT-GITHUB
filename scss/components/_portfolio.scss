@@ -1,5 +1,6 @@
 @import '../base/variables';
-// @import '../base/extends';
+@import '../base/maps';
+@import '../base/mixins';
 
 /*    Portfolio    */
 
@@ -11,15 +12,11 @@
 
 
 .portfolio {
-    text-align: center;
-    width: 100%;
-    margin: 1rem 0 2rem;
+    text-align: map-get($port, t-a);
+    margin: map-get($port, m);
 
     h2 {
-        width: 100%;
-        margin: 1rem auto;
-        color: $bg-secundario;
-        align-self: center;
+        @include h2(100%, 1rem auto, $bg-secundario, center);
     }
 
     .proyectos {
@@ -34,7 +31,7 @@
             margin: 0 auto;
 
             img {
-                width: 100%;
+                width: map-get($port, w);
                 max-width: 40rem;
             }
         }
