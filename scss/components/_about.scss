@@ -44,6 +44,13 @@
 
     .info {
 
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            cursor: default;
+            transform: translateY(-0.5rem);
+        }
+
         section {
         background-color: rgba(0, 255, 255, 0.055);
         border: solid $bg-primario 0.7rem;
