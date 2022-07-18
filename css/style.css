@@ -47,13 +47,14 @@ h4 {
   height: auto;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1;
 }
 .cabecera .navbar {
   height: 8rem;
 }
 .cabecera .navbar .bg-container {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.95);
 }
 .cabecera .navbar .bg-container .logo {
   text-decoration: none;
@@ -277,6 +278,11 @@ h4 {
 .service .servicio {
   height: 16rem;
   margin: 1rem 0;
+  transition: all 0.4s ease-in-out;
+}
+.service .servicio:hover {
+  cursor: default;
+  transform: translateY(-0.5rem);
 }
 .service .servicio section {
   height: 100%;
@@ -285,9 +291,6 @@ h4 {
   border: solid #00ffff 0.7rem;
   border-radius: 1rem;
   max-width: 40rem;
-}
-.service .servicio section:hover {
-  cursor: pointer;
 }
 .service .servicio section h3 {
   color: #ffffff;
@@ -329,6 +332,7 @@ h4 {
 .portfolio .proyectos section img {
   width: 100%;
   max-width: 40rem;
+  max-height: 26.66rem;
 }
 .portfolio .proyectos section .hover-img {
   width: 100%;

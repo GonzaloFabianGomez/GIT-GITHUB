@@ -25,6 +25,12 @@
     .servicio {
         height: 16rem;
         margin: 1rem 0;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            cursor: default;
+            transform: translateY(-0.5rem);
+        }
 
         section {
             height: map-get($port, h);
@@ -33,10 +39,6 @@
             border: solid $bg-primario 0.7rem;
             border-radius: 1rem;
             max-width: 40rem;
-
-            &:hover {
-                cursor: pointer;
-            }
 
             h3 {
                 color: $bg-secundario;
